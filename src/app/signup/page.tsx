@@ -4,6 +4,9 @@ import { useRouter } from "next/navigation";
 import { Toaster, toast } from "react-hot-toast";
 import axios from "axios";
 
+console.log("Environment Test - MONGO_URI:", process.env.MONGO_URI);
+
+
 export default function Signup() {
   const router = useRouter();
   const [User, setUser] = useState({
